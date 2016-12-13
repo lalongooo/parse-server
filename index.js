@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://lalongooo:Mand191205-@ds133428.mlab.com:33428/heroku_3lj2tr02',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || 'YgTCdpVe34aU64CK9KzZwbNxC',
+  masterKey: process.env.MASTER_KEY || 'R19xTlTYa7Ag2fm41Usj4eavr', //Add your master key here. Keep it secret!
+  serverURL: process.env.SERVER_URL || 'https://permutas-sep-parse-dev-github.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
